@@ -68,7 +68,7 @@ var (
 		Bech32Prefix:        "feeabs",
 		Denom:               "stake",
 		CoinType:            "118",
-		GasPrices:           "0.00stake",
+		GasPrices:           "0.025stake",
 		GasAdjustment:       1.1,
 		TrustingPeriod:      "112h",
 		NoHostMount:         false,
