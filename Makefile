@@ -133,8 +133,8 @@ ictest-feeabs:
 ictest-query-osmosis-twap:
 	cd tests/interchaintest && go test -timeout=25m -race -v -run TestQueryOsmosisTwap .
 
-# ictest-feeabs-ibc-transfer:
-# 		cd tests/interchaintest && go test -timeout=25m -race -v -run  TestIBCTransferWithFeeAbs .
+ictest-feeabs-ibc-transfer:
+	cd tests/interchaintest && go test -timeout=25m -race -v -run  'TestFeeabsGaiaIBCTransferWithIBCFee$$' .
 
 # Executes all tests via interchaintest after compling a local image as juno:local
 ictest-all: ictest-basic ictest-ibc ictest-packet-forward ictest-host-zone-proposal ictest-query-osmosis-twap ictest-feeabs

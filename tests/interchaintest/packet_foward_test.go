@@ -5,11 +5,12 @@ import (
 	"fmt"
 	"testing"
 
-	sdktypes "github.com/cosmos/cosmos-sdk/types"
 	transfertypes "github.com/cosmos/ibc-go/v7/modules/apps/transfer/types"
 	"github.com/strangelove-ventures/interchaintest/v7/chain/cosmos"
 	"github.com/strangelove-ventures/interchaintest/v7/testutil"
 	"github.com/stretchr/testify/require"
+
+	sdktypes "github.com/cosmos/cosmos-sdk/types"
 
 	feeabsCli "github.com/osmosis-labs/fee-abstraction/tests/interchaintest/feeabs"
 )
